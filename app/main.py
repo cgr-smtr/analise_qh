@@ -1,3 +1,11 @@
+import sys
+import pathlib
+
+# Adiciona o diretório raiz do projeto ao sys.path para garantir o funcionamento das importações no Streamlit Cloud
+root_dir = str(pathlib.Path(__file__).parent.parent.resolve())
+if root_dir not in sys.path:
+    sys.path.insert(0, root_dir)
+
 import streamlit as st
 import tempfile
 import os
