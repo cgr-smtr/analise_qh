@@ -2,3 +2,15 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.streamlit/secrets.toml
